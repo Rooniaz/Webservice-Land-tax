@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Programmatically writing XML-->
+<Cars>
+	<Car type="Type: Sedan">
+		<CarID>001</CarID>
+		<Brand>Toyota</Brand>
+		<Model>Camry</Model>
+		<Year>2013</Year>
+		<Price>760000</Price>
+		<Location>Ratchada Soi 24</Location>
+		<SellingStatus>Not sold</SellingStatus>
+	</Car>
+	<Car type="Type: Sedan">
+		<CarID>002</CarID>
+		<Brand>Honda</Brand>
+		<Model>Accord</Model>
+		<Year>2009</Year>
+		<Price>450000</Price>
+		<Location>Kanchanapisek Bangyai</Location>
+		<SellingStatus>Not sold</SellingStatus>
+	</Car>
+	<Car type="Type: SUV">
+		<CarID>003</CarID>
+		<Brand>Honda</Brand>
+		<Model>CRV</Model>
+		<Year>2013</Year>
+		<Price>795000</Price>
+		<Location>Ratchapruk</Location>
+		<SellingStatus>Not sold</SellingStatus>
+	</Car>
+	<Car type="Type: SUV">
+		<CarID>005</CarID>
+		<Brand>Mazda</Brand>
+		<Model>CX-5</Model>
+		<Year>2016</Year>
+		<Price>1250000</Price>
+		<Location>Ratchapruk</Location>
+		<SellingStatus>Not sold</SellingStatus>
+	</Car>
+	<Car type="Type: Sedan">
+		<CarID>006</CarID>
+		<Brand>Volvo</Brand>
+		<Model>S80</Model>
+		<Year>2008</Year>
+		<Price>680000</Price>
+		<Location>Ratanatibet</Location>
+		<SellingStatus>Sold</SellingStatus>
+	</Car>
+	<Car type="Type: PickUp">
+		<CarID>007</CarID>
+		<Brand>Nissan</Brand>
+		<Model>Navara</Model>
+		<Year>2012</Year>
+		<Price>450000</Price>
+		<Location>Ratchapruk</Location>
+		<SellingStatus>Not sold</SellingStatus>
+	</Car>
+	<Car type="Type: PickUp">
+		<CarID>008</CarID>
+		<Brand>Mitsubishi</Brand>
+		<Model>Triton</Model>
+		<Year>2011</Year>
+		<Price>480000</Price>
+		<Location>Ratchapruk</Location>
+		<SellingStatus>Not sold</SellingStatus>
+	</Car>
+	<Car type="Type: PPV">
+		<CarID>009</CarID>
+		<Brand>Mitsubishi</Brand>
+		<Model>Pajero Sport</Model>
+		<Year>2009</Year>
+		<Price>600000</Price>
+		<Location>Kanchanapisek Bangyai</Location>
+		<SellingStatus>Sold</SellingStatus>
+	</Car>
+	<Car type="Type: Sedan">
+		<CarID>009</CarID>
+		<Brand>BMW</Brand>
+		<Model>Series 520d</Model>
+		<Year>2008</Year>
+		<Price>850000</Price>
+		<Location>Kanchanapisek Bangyai</Location>
+		<SellingStatus>Sold</SellingStatus>
+	</Car>
+</Cars>

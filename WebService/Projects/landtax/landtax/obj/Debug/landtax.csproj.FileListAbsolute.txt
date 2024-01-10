@@ -1,0 +1,12 @@
+c:\users\noppa\onedrive\เอกสาร\visual studio 2012\Projects\landtax\landtax\obj\Debug\landtax.csprojResolveAssemblyReference.cache
+c:\users\noppa\onedrive\เอกสาร\visual studio 2012\Projects\landtax\landtax\bin\landtax.dll
+c:\users\noppa\onedrive\เอกสาร\visual studio 2012\Projects\landtax\landtax\bin\landtax.pdb
+c:\users\noppa\onedrive\เอกสาร\visual studio 2012\Projects\landtax\landtax\obj\Debug\landtax.dll
+c:\users\noppa\onedrive\เอกสาร\visual studio 2012\Projects\landtax\landtax\obj\Debug\landtax.pdb
+C:\Users\Donrit\source\repos\Project\landtax\landtax\bin\landtax.dll.config
+C:\Users\Donrit\source\repos\Project\landtax\landtax\bin\landtax.dll
+C:\Users\Donrit\source\repos\Project\landtax\landtax\bin\landtax.pdb
+C:\Users\Donrit\source\repos\Project\landtax\landtax\obj\Debug\landtax.csproj.AssemblyReference.cache
+C:\Users\Donrit\source\repos\Project\landtax\landtax\obj\Debug\landtax.csproj.CoreCompileInputs.cache
+C:\Users\Donrit\source\repos\Project\landtax\landtax\obj\Debug\landtax.dll
+C:\Users\Donrit\source\repos\Project\landtax\landtax\obj\Debug\landtax.pdb

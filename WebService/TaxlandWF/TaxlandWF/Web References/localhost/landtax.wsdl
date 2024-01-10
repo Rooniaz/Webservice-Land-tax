@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CalculateIndustrialLandTax">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateIndustrialLandTaxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateIndustrialLandTaxResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateVacantLandTax">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateVacantLandTaxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateVacantLandTaxResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateTaxForIndividual">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="buildingValue" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateTaxForIndividualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateTaxForIndividualResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateTaxForLegalEntity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="buildingValue" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateTaxForLegalEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateTaxForLegalEntityResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateResidenceTax1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="buildingValue" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateResidenceTax1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateResidenceTax1Result" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateResidenceTax2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="buildingValue" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateResidenceTax2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateResidenceTax2Result" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateResidenceTax3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="landValue" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="buildingValue" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateResidenceTax3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CalculateResidenceTax3Result" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CalculateIndustrialLandTaxSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateIndustrialLandTax" />
+  </wsdl:message>
+  <wsdl:message name="CalculateIndustrialLandTaxSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateIndustrialLandTaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateVacantLandTaxSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateVacantLandTax" />
+  </wsdl:message>
+  <wsdl:message name="CalculateVacantLandTaxSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateVacantLandTaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateTaxForIndividualSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateTaxForIndividual" />
+  </wsdl:message>
+  <wsdl:message name="CalculateTaxForIndividualSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateTaxForIndividualResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateTaxForLegalEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateTaxForLegalEntity" />
+  </wsdl:message>
+  <wsdl:message name="CalculateTaxForLegalEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateTaxForLegalEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateResidenceTax1SoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateResidenceTax1" />
+  </wsdl:message>
+  <wsdl:message name="CalculateResidenceTax1SoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateResidenceTax1Response" />
+  </wsdl:message>
+  <wsdl:message name="CalculateResidenceTax2SoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateResidenceTax2" />
+  </wsdl:message>
+  <wsdl:message name="CalculateResidenceTax2SoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateResidenceTax2Response" />
+  </wsdl:message>
+  <wsdl:message name="CalculateResidenceTax3SoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateResidenceTax3" />
+  </wsdl:message>
+  <wsdl:message name="CalculateResidenceTax3SoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateResidenceTax3Response" />
+  </wsdl:message>
+  <wsdl:portType name="landtaxSoap">
+    <wsdl:operation name="CalculateIndustrialLandTax">
+      <wsdl:input message="tns:CalculateIndustrialLandTaxSoapIn" />
+      <wsdl:output message="tns:CalculateIndustrialLandTaxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateVacantLandTax">
+      <wsdl:input message="tns:CalculateVacantLandTaxSoapIn" />
+      <wsdl:output message="tns:CalculateVacantLandTaxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateTaxForIndividual">
+      <wsdl:input message="tns:CalculateTaxForIndividualSoapIn" />
+      <wsdl:output message="tns:CalculateTaxForIndividualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateTaxForLegalEntity">
+      <wsdl:input message="tns:CalculateTaxForLegalEntitySoapIn" />
+      <wsdl:output message="tns:CalculateTaxForLegalEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax1">
+      <wsdl:input message="tns:CalculateResidenceTax1SoapIn" />
+      <wsdl:output message="tns:CalculateResidenceTax1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax2">
+      <wsdl:input message="tns:CalculateResidenceTax2SoapIn" />
+      <wsdl:output message="tns:CalculateResidenceTax2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax3">
+      <wsdl:input message="tns:CalculateResidenceTax3SoapIn" />
+      <wsdl:output message="tns:CalculateResidenceTax3SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="landtaxSoap" type="tns:landtaxSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CalculateIndustrialLandTax">
+      <soap:operation soapAction="http://tempuri.org/CalculateIndustrialLandTax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateVacantLandTax">
+      <soap:operation soapAction="http://tempuri.org/CalculateVacantLandTax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateTaxForIndividual">
+      <soap:operation soapAction="http://tempuri.org/CalculateTaxForIndividual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateTaxForLegalEntity">
+      <soap:operation soapAction="http://tempuri.org/CalculateTaxForLegalEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax1">
+      <soap:operation soapAction="http://tempuri.org/CalculateResidenceTax1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax2">
+      <soap:operation soapAction="http://tempuri.org/CalculateResidenceTax2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax3">
+      <soap:operation soapAction="http://tempuri.org/CalculateResidenceTax3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="landtaxSoap12" type="tns:landtaxSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CalculateIndustrialLandTax">
+      <soap12:operation soapAction="http://tempuri.org/CalculateIndustrialLandTax" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateVacantLandTax">
+      <soap12:operation soapAction="http://tempuri.org/CalculateVacantLandTax" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateTaxForIndividual">
+      <soap12:operation soapAction="http://tempuri.org/CalculateTaxForIndividual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateTaxForLegalEntity">
+      <soap12:operation soapAction="http://tempuri.org/CalculateTaxForLegalEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax1">
+      <soap12:operation soapAction="http://tempuri.org/CalculateResidenceTax1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax2">
+      <soap12:operation soapAction="http://tempuri.org/CalculateResidenceTax2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateResidenceTax3">
+      <soap12:operation soapAction="http://tempuri.org/CalculateResidenceTax3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="landtax">
+    <wsdl:port name="landtaxSoap" binding="tns:landtaxSoap">
+      <soap:address location="http://localhost:63466/landtax.asmx" />
+    </wsdl:port>
+    <wsdl:port name="landtaxSoap12" binding="tns:landtaxSoap12">
+      <soap12:address location="http://localhost:63466/landtax.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
